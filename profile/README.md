@@ -1,15 +1,11 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./sorena-wordmark-dark.svg">
-    <img src="./sorena-wordmark.svg" alt="sorena labs" width="360">
-  </picture>
-</p>
-
-<h3 align="center">Software for the next screen.</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./banner-dark.svg">
+  <img src="./banner-light.svg" alt="Sorena Labs. Software for the next screen. Apps and games for every screen you own." width="100%">
+</picture>
 
 <p align="center">
-Apps and games for your phone, your desk, your wrist, your TV and your car.<br>
-Each one has its own name and colour. You'll still know it's ours.
+Every product has its own name, its own colour and the same care.<br>
+Only the light is different.
 </p>
 
-<p align="center">We use AI. The ideas, the taste and the last word stay with us.</p>
+<p align="center"><sub>We use AI. The ideas, the taste and the last word are ours.</sub></p>
