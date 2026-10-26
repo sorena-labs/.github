@@ -36,3 +36,10 @@ jobs:
             exit 1
           fi
           echo "Clean: every commit comes from our own accounts."
+      - name: Check files carry no tool provenance metadata
+        run: |
+          if git grep -lI -e 'c2pa' -- . ':(exclude).github/workflows/authorship.yml'; then
+            echo "::error::These files carry embedded provenance metadata from a tool. Strip the <metadata> block before committing."
+            exit 1
+          fi
+          echo "Clean: no embedded tool metadata."
