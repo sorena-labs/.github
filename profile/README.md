@@ -5,11 +5,11 @@
   </picture>
 </p>
 
-<h3 align="center">Every app starts here.</h3>
+<h3 align="center">Software for the next screen.</h3>
 
 <p align="center">
-Apps, games and whatever comes next.<br>
-Every one with its own name, its own colour and our full attention.
+Apps and games for your phone, your desk, your wrist, your TV and your car.<br>
+Each one has its own name and colour. You'll still know it's ours.
 </p>
 
-<p align="center"><b>Imagined by people. Accelerated by AI. Finished by hand.</b></p>
+<p align="center">We use AI. The ideas, the taste and the last word stay with us.</p>
