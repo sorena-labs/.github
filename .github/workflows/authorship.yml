@@ -1,0 +1,38 @@
+name: Authorship
+
+on:
+  push:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Made by our own accounts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check commits, authors and pull request text
+        env:
+          BLOCKED: ${{ vars.BLOCKED_NAMES }}
+          BEFORE: ${{ github.event.before }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+          REF: ${{ github.head_ref || github.ref_name }}
+          TITLE: ${{ github.event.pull_request.title }}
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          if [ -z "$BLOCKED" ]; then echo "::error::The org variable BLOCKED_NAMES is missing."; exit 1; fi
+          if [ -n "$BASE" ]; then RANGE="$BASE..$HEAD"
+          elif [ -n "$BEFORE" ] && ! echo "$BEFORE" | grep -qE '^0+$'; then RANGE="$BEFORE..$HEAD"
+          else RANGE="$HEAD"; fi
+          TEXT="$(git log --format='%an%n%ae%n%cn%n%ce%n%B' "$RANGE")"
+          if printf '%s\n%s\n%s\n%s\n' "$TEXT" "$REF" "$TITLE" "$BODY" | grep -qiE "$BLOCKED"; then
+            echo "::error::A commit, author, branch or pull request names an AI tool. Commit and push from your own account, with no co-author trailers, session links or generated-with lines."
+            exit 1
+          fi
+          echo "Clean: every commit comes from our own accounts."
