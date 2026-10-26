@@ -5,11 +5,15 @@
   </picture>
 </p>
 
-We build mobile apps, games and desktop apps with AI. Watch and car apps come next. Every product has its own name, mark and colour, and all of them share one design system and one typeface, so each carries a trace of Sorena.
+We use AI to move fast and people to get it right. Every product we ship has its own name, mark and colour, and all of them run on the same design system and the same typeface, so each one carries a trace of Sorena.
 
-### How we build
+### What we make
 
-- **One platform, many products.** Our design system lives in one shared platform. Each product has its own repo and builds on it.
-- **Usability first.** Every screen is checked on phone and desktop, in light and dark, with a screen reader. Touch targets are at least 44px.
-- **Calm by default.** Motion in our apps stays between 80 and 320ms and follows the reduced motion setting.
-- **AI drafts, people decide.** We use AI to move fast and people to choose what ships.
+Mobile apps, games and desktop apps. Watch and car apps come next.
+
+### How we work
+
+- **AI drafts, people decide.** AI gets us to a first version fast. People choose what ships and finish it by hand.
+- **One system underneath.** Every product builds on one shared platform: the same parts, the same type, the same care.
+- **Built for everyone.** Every screen is checked on phone and desktop, in light and dark, with a screen reader. Touch targets are at least 44px.
+- **Calm, not flashy.** Motion in our apps stays between 80 and 320ms and follows the reduced motion setting.
