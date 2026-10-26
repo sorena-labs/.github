@@ -5,15 +5,11 @@
   </picture>
 </p>
 
-<p align="center"><b>An AI product studio.</b> Many products, one system.</p>
-
----
-
-We build mobile apps, games and desktop apps with AI, and later apps for the wrist and the car. Every product has its own name, mark and colour. All of them share one design system and one typeface, so each one carries a trace of Sorena.
+We build mobile apps, games and desktop apps with AI. Watch and car apps come next. Every product has its own name, mark and colour, and all of them share one design system and one typeface, so each carries a trace of Sorena.
 
 ### How we build
 
-- **One platform, many products.** A shared platform repo holds the design system, tokens and components. Each product lives in its own repo and builds on it.
-- **Usability first.** Every screen works on phone and desktop, in light and dark, with screen readers and 44px touch targets.
-- **Calm by default.** Product motion stays between 80 and 320ms and always respects reduced motion.
+- **One platform, many products.** Our design system lives in one shared platform. Each product lives in its own repo and builds on it.
+- **Usability first.** Every screen is checked on phone and desktop, in light and dark, with a screen reader. Touch targets are at least 44px.
+- **Calm by default.** Motion in our apps stays between 80 and 320ms and follows the reduced motion setting.
 - **AI drafts, people decide.** We use AI to move fast and people to choose what ships.
