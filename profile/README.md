@@ -9,7 +9,7 @@ We build mobile apps, games and desktop apps with AI. Watch and car apps come ne
 
 ### How we build
 
-- **One platform, many products.** Our design system lives in one shared platform. Each product lives in its own repo and builds on it.
+- **One platform, many products.** Our design system lives in one shared platform. Each product has its own repo and builds on it.
 - **Usability first.** Every screen is checked on phone and desktop, in light and dark, with a screen reader. Touch targets are at least 44px.
 - **Calm by default.** Motion in our apps stays between 80 and 320ms and follows the reduced motion setting.
 - **AI drafts, people decide.** We use AI to move fast and people to choose what ships.
